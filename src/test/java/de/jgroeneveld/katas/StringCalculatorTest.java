@@ -1,6 +1,5 @@
 package de.jgroeneveld.katas;
 
-import org.hamcrest.core.IsEqual;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -8,7 +7,7 @@ import org.junit.rules.ExpectedException;
 import java.security.InvalidParameterException;
 
 import static org.hamcrest.core.IsEqual.equalTo;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class StringCalculatorTest {
 

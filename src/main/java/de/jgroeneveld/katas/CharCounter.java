@@ -13,7 +13,7 @@ public class CharCounter {
         for (int i = 0; i < input.length(); i++) {
             char keyChar = input.charAt(i);
             Integer count = result.get(keyChar);
-            if(count == null) {
+            if (count == null) {
                 count = 0;
             }
             result.put(keyChar, count + 1);

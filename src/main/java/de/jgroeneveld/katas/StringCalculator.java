@@ -23,14 +23,14 @@ public class StringCalculator {
         for (String n : numberParts) {
             if (numbers.length() > 0) {
                 int val = Integer.parseInt(n);
-                if(val < 0) {
+                if (val < 0) {
                     negatives.add(val);
                 }
                 sum += val;
             }
         }
 
-        if(negatives.size() > 0) {
+        if (negatives.size() > 0) {
             throw new InvalidParameterException("negatives not allowed: " + negatives);
         }
 

@@ -1,6 +1,5 @@
 package de.jgroeneveld.katas.supermarket;
 
-import org.hamcrest.core.IsEqual;
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;

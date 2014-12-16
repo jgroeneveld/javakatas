@@ -45,18 +45,6 @@ public class Checkout {
         return total;
     }
 
-    private ScannedItem addOrCreateScannedItem(String item) {
-        for (ScannedItem scannedItem : this.scannedItems) {
-            if (scannedItem.item.equals(item)) {
-                return scannedItem;
-            }
-        }
-
-        ScannedItem scannedItem = new ScannedItem(item);
-        this.scannedItems.add(scannedItem);
-        return scannedItem;
-    }
-
     private static class ScannedItem {
         public int amount = 0;
         public String item;
